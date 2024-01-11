@@ -186,3 +186,18 @@ def Enc(request):
     # Combina los contextos de ambas vistas en un solo diccionario
     context = {**grafica_data, **tuvista_data, **tuvista_data2}
     return render (request, 'encuesta.html',context)
+
+
+#nuevo comienzo
+
+def store(request):
+    context = {}
+    return render (request, 'API9ISC22/store.html', context)
+
+def cart(request):
+    context = {}
+    return render (request, 'API9ISC22/cart.html', context)
+
+def checkout(request):
+    context = {}
+    return render (request, 'API9ISC22/checkout.html', context)

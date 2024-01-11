@@ -9,6 +9,7 @@
         <link rel="icon" href="{% static 'img/favicon.png'%}" type="image/png">
         <title>MeetMe Personal</title>
         <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{% static '../static/css/estilo.css'%}">
         <link rel="stylesheet" href="{% static '../static/css/bootstrap.css'%}">
         <link rel="stylesheet" href="{% static '../static/css/style2.css'%}">
         <link rel="stylesheet" href="{% static '../static/css/font-awesome.min.css'%}">
@@ -18,6 +19,7 @@
         <link rel="stylesheet" href="{% static '../static/css/animate.css'%}">
         <link rel="stylesheet" href="{% static '../static/css/magnific-popup.css'%}">
         <link rel="stylesheet" href="{% static '../static/css/flaticon.css'%}">
+		<link rel="stylesheet" href="{% static '../static/js/app.js'%}">
         <!-- main css -->
         <link rel="stylesheet" href="{% static '../static/css/style3.css'%}">
         <link rel="stylesheet" href="{% static '../static/css/responsive.css'%}">
@@ -30,7 +32,7 @@
             	<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container box_1620">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="{% url 'index'%}"><img src="{% static 'img/logo.png'%}" alt=""></a>
+						<a class="navbar-brand logo_h" href="{% url 'index'%}"><h2>Tienda Online AyN</h2></a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -67,40 +69,134 @@
         <!--================Header Menu Area =================-->
         
         <!--================Home Banner Area =================-->
+		
         <section class="home_banner_area">
-           	<div class="container box_1620">
-           		<div class="banner_inner d-flex align-items-center">
 					<div class="banner_content">
 						<div class="media">
-							<div class="d-flex">
-								<img src="{% static ''%}" alt="">
-							</div>
-							<div class="media-body">
 								<div class="personal_text">
-									<h3>Tienda Online</h3>
 									<h4>Encuentra lo que buscas en nuestra pagina</h4>
-									<p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
-									<ul class="list basic_info">
-										<li><a href="#"><i class="lnr lnr-calendar-full"></i> 31st December, 1992</a></li>
-										<li><a href="#"><i class="lnr lnr-phone-handset"></i> 44 (012) 6954 783</a></li>
-										<li><a href="#"><i class="lnr lnr-envelope"></i> businessplan@donald</a></li>
-										<li><a href="#"><i class="lnr lnr-home"></i> Santa monica bullevard</a></li>
-									</ul>
-									<ul class="list personal_social">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-									</ul>
 								</div>
-							</div>
 						</div>
 					</div>
-				</div>
-            </div>
         </section>
         <!--================End Home Banner Area =================-->
         
         <!--================Welcome Area =================-->
+		<section class="contenedor">
+			<!-- Contenedor de elementos -->
+			<div class="contenedor-items">
+				<div class="item">
+					<span class="titulo-item">Box Engasse</span>
+					<img src="../static/img/boxengasse.png" alt="" class="img-item">
+					<span class="precio-item">$15.000</span>
+					<button class="boton-item">Agregar al Carrito</button>
+				</div>
+				<div class="item">
+					<span class="titulo-item">English Horse</span>
+					<img src="../static/img/englishrose.png" alt="" class="img-item">
+					<span class="precio-item">$25.000</span>
+					<button class="boton-item">Agregar al Carrito</button>
+				</div>
+				<div class="item">
+					<span class="titulo-item">Knock Nap</span>
+					<img src="../static/img/knocknap.png" alt="" class="img-item">
+					<span class="precio-item">$35.000</span>
+					<button class="boton-item">Agregar al Carrito</button>
+				</div>
+				<div class="item">
+					<span class="titulo-item">La Night</span>
+					<img src="../static/img/lanight.png" alt="" class="img-item">
+					<span class="precio-item">$18.000</span>
+					<button class="boton-item">Agregar al Carrito</button>
+				</div>
+				<div class="item">
+					<span class="titulo-item">Silver All</span>
+					<img src="../static/img/silverall.png" alt="" class="img-item">
+					<span class="precio-item">$32.000</span>
+					<button class="boton-item">Agregar al Carrito</button>
+				</div>
+				<div class="item">
+					<span class="titulo-item">Skin Glam</span>
+					<img src="../static/img/skinglam.png" alt="" class="img-item">
+					<span class="precio-item">$18.000</span>
+					<button class="boton-item">Agregar al Carrito</button>
+				</div>
+				<div class="item">
+					<span class="titulo-item">Midimix</span>
+					<img src="../static/img/midimix.png" alt="" class="img-item">
+					<span class="precio-item">$54.000</span>
+					<button class="boton-item">Agregar al Carrito</button>
+				</div>
+				<div class="item">
+					<span class="titulo-item">Sir Blue</span>
+					<img src="../static/img/sirblue.png" alt="" class="img-item">
+					<span class="precio-item">$32.000</span>
+					<button class="boton-item">Agregar al Carrito</button>
+				</div>
+				<div class="item">
+					<span class="titulo-item">Middlesteel</span>
+					<img src="../static/img/middlesteel.png" alt="" class="img-item">
+					<span class="precio-item">$42.800</span>
+					<button class="boton-item">Agregar al Carrito</button>
+				</div>
+			</div>
+			<!-- Carrito de Compras -->
+			<div class="carrito" id="carrito">
+				<div class="header-carrito">
+					<h2>Tu Carrito</h2>
+				</div>
+	
+				<div class="carrito-items">
+					<!-- 
+					<div class="carrito-item">
+						<img src="img/boxengasse.png" width="80px" alt="">
+						<div class="carrito-item-detalles">
+							<span class="carrito-item-titulo">Box Engasse</span>
+							<div class="selector-cantidad">
+								<i class="fa-solid fa-minus restar-cantidad"></i>
+								<input type="text" value="1" class="carrito-item-cantidad" disabled>
+								<i class="fa-solid fa-plus sumar-cantidad"></i>
+							</div>
+							<span class="carrito-item-precio">$15.000,00</span>
+						</div>
+					   <span class="btn-eliminar">
+							<i class="fa-solid fa-trash"></i>
+					   </span>
+					</div>
+					<div class="carrito-item">
+						<img src="img/skinglam.png" width="80px" alt="">
+						<div class="carrito-item-detalles">
+							<span class="carrito-item-titulo">Skin Glam</span>
+							<div class="selector-cantidad">
+								<i class="fa-solid fa-minus restar-cantidad"></i>
+								<input type="text" value="3" class="carrito-item-cantidad" disabled>
+								<i class="fa-solid fa-plus sumar-cantidad"></i>
+							</div>
+							<span class="carrito-item-precio">$18.000,00</span>
+						</div>
+					   <button class="btn-eliminar">
+							<i class="fa-solid fa-trash"></i>
+					   </button>
+					</div>
+					 -->
+				</div>
+				<div class="carrito-total">
+					<div class="fila">
+						<strong>Tu Total</strong>
+						<span class="carrito-precio-total">
+							$120.000,00
+						</span>
+					</div>
+				
+					<form class="btn-pagar" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						<input type="hidden" name="cmd" value="_s-xclick" />
+						<input type="hidden" name="hosted_button_id" value="ZHBVQJW2UQ756" />
+						<input type="hidden" name="currency_code" value="MXN" />
+						<input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_paynow_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+					  </form>
+				</div>
+			</div>
+		</section>
         <section class="welcome_area p_120">
         	<div class="container">
         		<div class="row welcome_inner">
@@ -537,6 +633,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="{% static 'js/jquery.counterup.min.js'%}"></script>
         <script src="{% static 'js/mail-script.js'%}"></script>
         <script src="{% static 'js/theme.js'%}"></script>
+		<script src="{% static 'js/app.js'%}"></script>
     </body>
 </html>
 {% else %}

@@ -19,7 +19,8 @@ from api.views import Home, About, Blog, Contact, Elements, Portfolio, Services,
 from api import views
 
 urlpatterns = [
-         path('', Home.as_view(),name='index'),
+     path('admin/', admin.site.urls),
+     path('', Home.as_view(),name='index'),
      path('about/', About.as_view(),name='about'),
      path('blog/', Blog.as_view(),name='blog'),
      path('contact/', Contact.as_view(),name='contact'),

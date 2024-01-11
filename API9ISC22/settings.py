@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    
+  
 ]
 
 MIDDLEWARE = [
@@ -148,3 +149,4 @@ EMAIL_HOST_PASSWORD = 'dxun rdyc vkix skcm'
 
 #Configuracion opcional del correo
 DEFAULT_FROM_EMAIL = 'axel.zarcort@gmail.com'
+
